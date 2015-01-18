@@ -11,7 +11,9 @@ Design of a General Purpose Microprocessor
 - Optimized in terms of area, delay and power consumption. &nbsp;<br />
 - Perl script used as decode stage of the processor(decoding instructions by generating input control signals)<br />
 - Result verification by perl script.<br />
-<br />
+- Frequency:<br />
+Design of a General Purpose Microprocessor
+===================================
 ## Design Detail
 
 
