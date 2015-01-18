@@ -39,3 +39,10 @@ end
 ```
 ###### Basic Schematic
 ![image] (https://dl.dropboxusercontent.com/s/kx1ykn9j2o9fqyw/image2.jpeg)
+
+###### Functionality Test
+
+Use Perl to create a vector file like this:
+![image] (https://dl.dropboxusercontent.com/s/u4jd1xhg6ixtd9j/image8.png)
+After simulation, we get the waveforms like this:
+![image] (https://dl.dropboxusercontent.com/s/oeqk7gkmfqukmaf/image9.png?dl=0)
