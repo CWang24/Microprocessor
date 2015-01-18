@@ -11,4 +11,20 @@ Design of a General Purpose Microprocessor
 - Optimized in terms of area, delay and power consumption. &nbsp;<br />
 - Perl script used as decode stage of the processor(decoding instructions by generating input control signals)<br />
 - Result verification by perl script.<br />
-####Phase 1: Divider Design
+#### Phase 1: Divider Design
+Mechanism explained in pseudo code
+```
+if D == 0 then throw an Exception end
+Q = 0; R = 0;
+for i =  ?
+? -1..0 do // n is data width of N
+R = R << 2 
+R(1:0) = N(2i+1:2i) 
+if R >= 3D then
+R = R – 3D; Q(2i+1:2i) = 3; end
+else if R >= 2D then
+R = R – 2D; Q(2i+1:2i) := 2; end
+else if R>= D then
+R = R – D; Q(2i+1:2i) := 1; end
+end
+```
