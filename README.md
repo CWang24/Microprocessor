@@ -1,6 +1,7 @@
 Design of a General Purpose Microprocessor
 ===================================
-####Features
+Features
+-----------------------------------
 Full custom design.&nbsp;<br />
 General purpose Multi-Cycle Microprocessor.&nbsp;<br />
 Consist of SRAM, ALU and Register Files.&nbsp;<br />
@@ -11,5 +12,4 @@ Support 13 different instructions including:&nbsp;<br />
 Optimized in terms of area, delay and power consumption. &nbsp;<br />
 Perl script used as decode stage of the processor(decoding instructions by generating input control signals)<br />
 Result verification by perl script.<br />
-======================================================================<br />
 ####Phase 1: Divider Design
