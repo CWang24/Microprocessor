@@ -31,3 +31,5 @@ else if R>= D then
 R = R – D; Q(2i+1:2i) := 1; end
 end
 ```
+
+[image]: https://dl.dropboxusercontent.com/s/kx1ykn9j2o9fqyw/image2.jpeg?dl=0
