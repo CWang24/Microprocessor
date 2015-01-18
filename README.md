@@ -85,6 +85,7 @@ Our Microprocessor consists of three parts: SRAM, Register Files and ALU. Since 
 
 This part we directly used the SRAM design in Lab2(You could find it [here](http://www.dushibaiyu.com)). However we cut off the DFFs that are connected to the reader circuit.
 ###### 2.2 Register Files
+The DFF design is [here](http://www.dushibaiyu.com)
 ###### 2.3 ALU
 We design two ALUs, they are almost identical in terms of structure. We name them as “Left ALU” and “Right ALU” based on their locations in the schematic. The only difference between the two is the sizing of some paths due to their different positions in this processor.
 ###### 2.4 Overall schematic
