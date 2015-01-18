@@ -46,5 +46,5 @@ Use Perl to create a vector file like this(N=8, D=3):
 After simulation, we get the waveforms like this:
 ![image] (https://dl.dropboxusercontent.com/s/oeqk7gkmfqukmaf/image9.png?dl=0)
 It's displaying Quotient[QO<15>:Q<0>]= and Remainder[R<15>:R<0>]=<br />
-(Since I do not have the license of this Cadence Virtuoso any more, I could only view the circuits I designed, while not allowed to run any simulation. The waveform figure is what I got at that semester, but obviously the result is cooresponding to another input setting.)<br />
-(But the design is abosolutely correct, otherwise we would not be able to carry on with the following processor design, while in the end actually our design was among the top 10 designs of that semester)
+(Since I do not have the license of this Cadence Virtuoso any more, I could only view the circuits I designed at that time, while not allowed to run any simulation. The waveform figure above is one output of this circuit, but obviously the result is not corresponding to the input setting I wrote above.)<br />
+(But trust me the design is abosolutely correct, otherwise we would not be able to carry on with the following processor design, while in the end actually our design was among the top 10 designs of that semester)
