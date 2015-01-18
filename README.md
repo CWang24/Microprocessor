@@ -18,7 +18,7 @@ Design of a General Purpose Microprocessor
 ## Design Detail
 
 
-### Phase 1: Divider Design
+#### Phase 1: Divider Design
 Mechanism explained in pseudo code
 ```
 if D == 0 then throw an Exception end
