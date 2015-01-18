@@ -21,7 +21,8 @@ Design of a General Purpose Microprocessor
 #### Phase 1: Divider Design
 In phase1, we design the divider for 16-bit unsigned data.  All the values here are unsigned integers.<br />
 
-Mechanism explained in pseudo code(Q: quotient, R: remainder, N: dividend, D: divisor) N/D=Q...R
+###### 1.1 Mechanism 
+Explained in pseudo code(Q: quotient, R: remainder, N: dividend, D: divisor) N/D=Q...R
 ```
 if D == 0 then throw an Exception end
 Q = 0; R = 0;
@@ -36,12 +37,12 @@ for i =  n/2 -1..0 do // n is data width of N
   R = R – D; Q(2i+1:2i) := 1; end
 end
 ```
-###### Basic Schematic
+###### 1.2 Basic Schematic
 ![image] (https://dl.dropboxusercontent.com/s/kx1ykn9j2o9fqyw/image2.jpeg)
 
-###### Functionality Test
+###### 1.3 Functionality Test
 
-Use Perl(see divider_function_test_vec_gen.pl) to create a vector file like this(N=8, D=3):
+Use Perl(see [here](https://github.com/CWang24/Design-of-a-General-Purpose-Microprocessor/blob/master/divider_function_test_vec_gen.pl)) to create a vector file like this(N=8, D=3):
 ```
 radix 4 4 1 1 1 1 
 io  i  i  i  i  i  i 
@@ -80,6 +81,12 @@ It's displaying Quotient[QO<15>:Q<0>]= and Remainder[R<15>:R<0>]=<br />
 
 Our Microprocessor consists of three parts: SRAM, Register Files and ALU. Since we merged the divider with all other function units, multiply select signals and transmisstion gate have been designed to ensure the paths are correct to realize the operation of each intruction.
 
-###### SRAM
+###### 2.1 SRAM
 
 This part we directly used the SRAM design in Lab2(You could find it [here](http://www.dushibaiyu.com)). However we cut off the DFFs that are connected to the reader circuit.
+###### 2.2 Register Files
+###### 2.3 ALU
+We design two ALUs, they are almost identical in terms of structure. We name them as “Left ALU” and “Right ALU” based on their locations in the schematic. The only difference between the two is the sizing of some paths due to their different positions in this processor.
+###### 2.4 Overall schematic
+###### 2.5 Perl Scripting
+The perl code is [here](http://www.dushibaiyu.com). It reads the instruction file “cmd.txt”, and generate the corresponding vector file “CPU.vec”.
