@@ -1,6 +1,6 @@
 Design of a General Purpose Microprocessor
 ===================================
-#####Features
+##### Features
 - Full custom design.&nbsp;<br />
 - General purpose Multi-Cycle Microprocessor.&nbsp;<br />
 - Consist of SRAM, ALU and Register Files.&nbsp;<br />
@@ -12,8 +12,9 @@ Design of a General Purpose Microprocessor
 - Perl script used as decode stage of the processor(decoding instructions by generating input control signals)<br />
 - Result verification by perl script.<br />
 Design Detail
-----
-#####Phase 1: Divider Design<br />
+-----------------------------------
+
+##### Phase 1: Divider Design
 Mechanism explained in pseudo code
 ```
 if D == 0 then throw an Exception end
