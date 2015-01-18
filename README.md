@@ -42,7 +42,6 @@ end
 ###### Functionality Test
 
 Use Perl(see divider_function_test_vec_gen.pl) to create a vector file like this(N=8, D=3):
-![image] (https://dl.dropboxusercontent.com/s/u4jd1xhg6ixtd9j/image8.png)
 ```
 radix 4 4 1 1 1 1 
 io  i  i  i  i  i  i 
@@ -76,3 +75,11 @@ After simulation, we get the waveforms like this:
 It's displaying Quotient[QO<15>:Q<0>]= and Remainder[R<15>:R<0>]=<br />
 (Since I do not have the license of this Cadence Virtuoso any more, I could only view the circuits I designed at that time, while not allowed to run any simulation. The waveform figure above is one output of this circuit, but obviously the result is not corresponding to the input setting I wrote above.)<br />
 (But trust me the design is abosolutely correct, otherwise we would not be able to carry on with the following processor design, while in the end actually our design was among the top 10 designs of that semester)
+
+#### Phase 2: Microprocessor Overview
+
+Our Microprocessor consists of three parts: SRAM, Register Files and ALU. Since we merged the divider with all other function units, multiply select signals and transmisstion gate have been designed to ensure the paths are correct to realize the operation of each intruction.
+
+###### SRAM
+
+This part we directly used the SRAM design in Lab2(You could find it [here](http://www.dushibaiyu.com)). However we cut off the DFFs that are connected to the reader circuit.
