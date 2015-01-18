@@ -41,8 +41,36 @@ end
 
 ###### Functionality Test
 
-Use Perl to create a vector file like this(N=8, D=3):
+Use Perl(see divider_function_test_vec_gen.pl) to create a vector file like this(N=8, D=3):
 ![image] (https://dl.dropboxusercontent.com/s/u4jd1xhg6ixtd9j/image8.png)
+```
+radix 4 4 1 1 1 1 
+io  i  i  i  i  i  i 
+vname Ni<15:12> Ni<11:8> Ni<7:4> Ni<3:0> D<3:0> D<15:12> D<11:8> D<7:4> D<3:0> Nselect reset clk ~clk
+slope 0.01
+vih 1.8
+tunit ns
+0 0 0 0 8 0 0 0 3 0 0 1 0
+5 0 0 0 8 0 0 0 3 0 1 0 1
+7.5 0 0 0 8 0 0 0 3 1 1 1 0
+10 0 0 0 8 0 0 0 3 1 1 0 1
+12.5 0 0 0 8 0 0 0 3 1 1 1 0
+15 0 0 0 8 0 0 0 3 1 1 0 1
+17.5 0 0 0 8 0 0 0 3 1 1 1 0
+20 0 0 0 8 0 0 0 3 1 1 0 1
+22.5 0 0 0 8 0 0 0 3 1 1 1 0
+25 0 0 0 8 0 0 0 3 1 1 0 1
+27.5 0 0 0 8 0 0 0 3 1 1 1 0
+30 0 0 0 8 0 0 0 3 1 1 0 1
+32.5 0 0 0 8 0 0 0 3 1 1 1 0
+35 0 0 0 8 0 0 0 3 1 1 0 1
+37.5 0 0 0 8 0 0 0 3 1 1 1 0
+40 0 0 0 8 0 0 0 3 1 1 0 1
+42.5 0 0 0 8 0 0 0 3 1 1 1 0
+45 0 0 0 8 0 0 0 3 1 1 0 1
+47.5 0 0 0 8 0 0 0 3 1 1 1 0
+50 0 0 0 8 0 0 0 3 1 1 0 1
+```
 After simulation, we get the waveforms like this:
 ![image] (https://dl.dropboxusercontent.com/s/oeqk7gkmfqukmaf/image9.png?dl=0)
 It's displaying Quotient[QO<15>:Q<0>]= and Remainder[R<15>:R<0>]=<br />
