@@ -1,6 +1,5 @@
-#Design of a General Purpose Microprocessor<br />
-<br />
-<br />
+Design of a General Purpose Microprocessor
+===================================
 ####Features
 Full custom design.&nbsp;<br />
 General purpose Multi-Cycle Microprocessor.&nbsp;<br />
