@@ -12,7 +12,7 @@ Design of a General Purpose Microprocessor
 - Perl script used as decode stage of the processor(decoding instructions by generating input control signals)<br />
 - Result verification by perl script.<br />
 ### Design Detail
-
+****
 
 ### Phase 1: Divider Design
 Mechanism explained in pseudo code
