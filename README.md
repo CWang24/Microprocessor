@@ -82,10 +82,9 @@ It's displaying Quotient[QO<15>:Q<0>]= and Remainder[R<15>:R<0>]=<br />
 Our Microprocessor consists of three parts: SRAM, Register Files and ALU. Since we merged the divider with all other function units, multiply select signals and transmisstion gate have been designed to ensure the paths are correct to realize the operation of each intruction.
 
 ###### 2.1 SRAM
-
-This part we directly used the SRAM design in Lab2(You could find it [here](http://www.dushibaiyu.com)). However we cut off the DFFs that are connected to the reader circuit.
+This part we directly used the SRAM design in Lab2(You could find it [here](https://github.com/CWang24/SRAM)). However we cut off the DFFs that are connected to the reader circuit.
 ###### 2.2 Register Files
-The DFF design is [here](http://www.dushibaiyu.com)
+The DFF design is [here](https://github.com/CWang24/DFF)
 ###### 2.3 ALU
 We design two ALUs, they are almost identical in terms of structure. We name them as “Left ALU” and “Right ALU” based on their locations in the schematic. The only difference between the two is the sizing of some paths due to their different positions in this processor.
 ###### 2.4 Overall schematic
