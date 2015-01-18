@@ -1,0 +1,2 @@
+# Design-of-a-General-Purpose-Microprocessor
+Full custom design of a general purpose Multi-Cycle Microprocessor, consisting of SRAM, ALU and Register Files, supporting 13 different instructions including memory instructions like LOAD STORE, logic instructions like AND OR XOR, ADD instructions with 3 different burst lengths and 16-bit division instruction.  Optimized in terms of area, delay and power consumption.  Perl script used for decoding instructions, generating input control signals and result verification. 
