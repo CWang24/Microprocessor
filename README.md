@@ -20,9 +20,8 @@ Design of a General Purpose Microprocessor
 
 #### Phase 1: Divider Design
 In phase1, we design the divider for 16-bit unsigned data.  All the values here are unsigned integers.<br />
-(Q: quotient, R: remainder, N: dividend, D: divisor)<br />
 
-Mechanism explained in pseudo code
+Mechanism explained in pseudo code(Q: quotient, R: remainder, N: dividend, D: divisor)
 ```
 if D == 0 then throw an Exception end
 Q = 0; R = 0;
