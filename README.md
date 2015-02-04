@@ -27,12 +27,12 @@ See [here](https://github.com/CWang24/16-bit-Unsigned-Divider)
 Our Microprocessor consists of three parts: SRAM, Register Files and ALU. Since we merged the divider with all other function units, multiply select signals and transmisstion gate have been designed to ensure the paths are correct to realize the operation of each intruction.
 
 ###### 2.1 SRAM
-This part we directly used the SRAM design in Lab2(You could find it [here(part1)](https://github.com/CWang24/SRAM_Part1) and [here(part2)](https://github.com/CWang24/SRAM_Part2). However we replaced the DFFs with Register Files here.
+This part we directly used the SRAM design in Lab2([part1](https://github.com/CWang24/SRAM_Part1) and [part2](https://github.com/CWang24/SRAM_Part2). However we replaced the DFFs with Register Files here.
 ###### 2.2 Register Files
-The DFF design is [here](https://github.com/CWang24/DFF)
+Put 16 DFFs in a row, place them behind the SRAM. (TBC...)
 ###### 2.3 ALU
 We designed two ALUs, they are almost identical in terms of structure. Placing two ALUs here is a compromise after a trade-off between area and speed. With two ALU, each 16 bits, we could do 32 bits calcultions directly.
 The only difference between the two is the sizing of some paths due to their different positions in this processor.
 ###### 2.4 Overall schematic
 ###### 2.5 Perl Scripting
-The perl code is [here](http://www.dushibaiyu.com). It reads the instruction file “cmd.txt”, and generate the corresponding vector file “CPU.vec”.
+The perl code is [CPU_vec_gen.pl](https://github.com/CWang24/Design-of-a-General-Purpose-Microprocessor/blob/master/CPU_vec_gen.pl). It reads the instruction file “cmd.txt”, and generate the corresponding vector file “CPU.vec”.
