@@ -34,7 +34,7 @@ Put 16 DFFs in a row, place them behind the SRAM. (TBC...)
 We designed two ALUs, they are almost identical in terms of structure. Placing two ALUs here is a compromise after a trade-off between area and speed. With two ALU, each 16 bits, we could do 32 bits calcultions directly.
 The only difference between the two is the sizing of some paths due to their different positions in this processor.
 
-<b>Apart from the Divider designed in phase1, our ALU include a [16-bit Carry Bypass Adde](https://github.com/CWang24/Adders), but it's upgraded to carry on all arithmatic and logic operations required.</b>
+<b>Apart from the Divider designed in phase1, our ALU include a [16-bit Carry Bypass Adder](https://github.com/CWang24/Adders), but it's upgraded to carry on all arithmatic and logic operations required.</b>
 
 ###### 2.4 Overall schematic
 ###### 2.5 Perl Scripting
