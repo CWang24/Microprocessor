@@ -31,7 +31,8 @@ This part we directly used the SRAM design in Lab2(You could find it [here(part1
 ###### 2.2 Register Files
 The DFF design is [here](https://github.com/CWang24/DFF)
 ###### 2.3 ALU
-We design two ALUs, they are almost identical in terms of structure. We name them as “Left ALU” and “Right ALU” based on their locations in the schematic. The only difference between the two is the sizing of some paths due to their different positions in this processor.
+We designed two ALUs, they are almost identical in terms of structure. Placing two ALUs here is a compromise after a trade-off between area and speed. With two ALU, each 16 bits, we could do 32 bits calcultions directly.
+The only difference between the two is the sizing of some paths due to their different positions in this processor.
 ###### 2.4 Overall schematic
 ###### 2.5 Perl Scripting
 The perl code is [here](http://www.dushibaiyu.com). It reads the instruction file “cmd.txt”, and generate the corresponding vector file “CPU.vec”.
