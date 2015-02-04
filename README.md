@@ -1,7 +1,7 @@
 Design of a General Purpose Microprocessor
 ===================================
 #### Features
-- Full custom design.&nbsp;<br />
+- 180nm technique full custom design.&nbsp;<br />
 - General purpose Multi-Cycle Microprocessor.&nbsp;<br />
 - Consist of SRAM, ALU and Register Files.&nbsp;<br />
 - Support 13 different instructions including:&nbsp;<br />
@@ -11,7 +11,7 @@ Design of a General Purpose Microprocessor
 - Optimized in terms of area, delay and power consumption. &nbsp;<br />
 - Perl script used as decode stage of the processor(decoding instructions by generating input control signals)<br />
 - Result verification by perl script.<br />
-- Frequency:<br />
+- Frequency:667MHz<br />
  
 
 
@@ -33,6 +33,8 @@ Put 16 DFFs in a row, place them behind the SRAM. (TBC...)
 ###### 2.3 ALU
 We designed two ALUs, they are almost identical in terms of structure. Placing two ALUs here is a compromise after a trade-off between area and speed. With two ALU, each 16 bits, we could do 32 bits calcultions directly.
 The only difference between the two is the sizing of some paths due to their different positions in this processor.
+Apart from the Divider designed in phase1, our ALU include a [16-bit Carry Bypass Adde](https://github.com/CWang24/Adders), but it's upgraded to carry on all arithmatic and logic operations required.
+
 ###### 2.4 Overall schematic
 ###### 2.5 Perl Scripting
 The perl code is [CPU_vec_gen.pl](https://github.com/CWang24/Design-of-a-General-Purpose-Microprocessor/blob/master/CPU_vec_gen.pl). It reads the instruction file “cmd.txt”, and generate the corresponding vector file “CPU.vec” for the whole simulation process.
