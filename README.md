@@ -35,4 +35,4 @@ We designed two ALUs, they are almost identical in terms of structure. Placing t
 The only difference between the two is the sizing of some paths due to their different positions in this processor.
 ###### 2.4 Overall schematic
 ###### 2.5 Perl Scripting
-The perl code is [CPU_vec_gen.pl](https://github.com/CWang24/Design-of-a-General-Purpose-Microprocessor/blob/master/CPU_vec_gen.pl). It reads the instruction file “cmd.txt”, and generate the corresponding vector file “CPU.vec”.
+The perl code is [CPU_vec_gen.pl](https://github.com/CWang24/Design-of-a-General-Purpose-Microprocessor/blob/master/CPU_vec_gen.pl). It reads the instruction file “cmd.txt”, and generate the corresponding vector file “CPU.vec” for the whole simulation process.
