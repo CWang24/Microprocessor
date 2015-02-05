@@ -27,7 +27,7 @@ See [here](https://github.com/CWang24/16-bit-Unsigned-Divider)
 Our Microprocessor consists of three parts: SRAM, Register Files and ALU. Since we merged the divider with all other function units, multiply select signals and transmisstion gate have been designed to ensure the paths are correct to realize the operation of each intruction.
 
 ###### 2.1 SRAM
-This part we directly used the SRAM design in Lab2([part1](https://github.com/CWang24/SRAM_Part1) and [part2](https://github.com/CWang24/SRAM_Part2)). However we replaced the DFFs with Register Files here.
+This part we directly used the SRAM design in Lab2([part1](https://github.com/CWang24/SRAM_Part1) and [part2](https://github.com/CWang24/SRAM_Part2)). However we replaced the DFFs with Register Files here. What's more, I sized up the decoder and some other parts including the Read Circuit, and finally upgrade the accessor time to 1.2ns.
 ###### 2.2 Register Files
 Put 16 DFFs in a row, place them behind the SRAM. (TBC...)
 ###### 2.3 ALU
